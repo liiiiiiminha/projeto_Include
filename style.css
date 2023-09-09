@@ -14,7 +14,6 @@ html{
     font-size: 62.5%;
     
 }
-
 .main-bg{
     background-image: url(img/main-bg.svg);
     background-position: center;
@@ -60,6 +59,7 @@ header{
     position: fixed;
     background-color: #000000;
     transition: 1s;
+    z-index: 1;
 }
 #header.rolagem{
     background-color: #000000;
@@ -68,7 +68,12 @@ header{
 #header.rolagem a{
     color: white;
 }
-
+.section {
+    border-bottom: solid 0.2rem grey;
+}
+.section#galeria{
+    border-bottom: none;
+}
 body {
     font-family: 'Exo 2', sans-serif;
     background-image: url(img/main-bg.svg);
@@ -91,7 +96,9 @@ h3 {
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
-
+#this-is-cinema{
+    height: 46rem;
+}
 #logo {
     align-items: left;
     height: 8rem;
@@ -128,6 +135,7 @@ header ul li a{
     height: 50rem;
     border-radius: 10%;
     border: #535353 solid 0.2rem;
+    z-index: 999;
 }
 .catalogo{
     margin-top: 4rem;
@@ -140,7 +148,9 @@ header ul li a{
 #filmes{
     padding-top: 10rem;
 }
-
+#galeria{
+    padding-top: 10rem;
+}
 footer{
     display: flex;
     height: 5rem;
@@ -153,4 +163,20 @@ footer{
 .filme-img:hover{
     transform: scale(1.15);
     transition: transform 500ms ease-in-out;
+}
+
+#curiosidades{
+    padding-top: 10rem;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    column-gap: 10rem;
+    align-items: center top;
+}
+img.curiosidades-img{
+    height: 50rem;
+    justify-self: center top;
+
 }

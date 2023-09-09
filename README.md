@@ -1,2 +1,2 @@
 # projeto_Include
-desafio no qual eu crio uma landing page com html, css e js.
+desafio no qual eu crio uma landing page sobre o diretor Martin Scoresese com html, css e js.

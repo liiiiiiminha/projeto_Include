@@ -12,8 +12,9 @@ font-family: 'Roboto', sans-serif;*/
 }
 html{
     font-size: 62.5%;
-    height: 500vh;
+    
 }
+
 .main-bg{
     background-image: url(img/main-bg.svg);
     background-position: center;
@@ -28,7 +29,7 @@ html{
 }
 #intro{
     height: 100vh;
-    margin-top: 10rem;
+    padding-top: 10rem;
 }
 .container{
     max-width: 120rem;
@@ -112,12 +113,44 @@ header ul li a{
     color: #FFFFFF;
     text-decoration: none;
 }
-.menu-spacing{
-    height: 14rem;
-}
 
 .intro-content{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: var(--gap);
+    height: 90vh;
+    align-items: center;
+}
+.intro-content h1{
+    margin-bottom: 2rem;
+}
+.filme-poster{
+    height: 50rem;
+    border-radius: 10%;
+    border: #535353 solid 0.2rem;
+}
+.catalogo{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 4rem;
+}
+
+#filmes{
+    padding-top: 10rem;
+}
+
+footer{
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-style: italic;
+}
+.filme-img:hover{
+    transform: scale(1.15);
+    transition: transform 500ms ease-in-out;
 }

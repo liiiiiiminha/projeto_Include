@@ -12,7 +12,7 @@ font-family: 'Roboto', sans-serif;*/
 }
 html{
     font-size: 62.5%;
-    
+    scroll-behavior: smooth;
 }
 .main-bg{
     background-image: url(img/main-bg.svg);
@@ -178,5 +178,28 @@ footer{
 img.curiosidades-img{
     height: 50rem;
     justify-self: center top;
+}
 
+.galeria-fotos{
+    padding-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--gap);
+}
+.imagem-galeria{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    border: #ffffff solid 0.2rem;
+    z-index: 999;
+}
+.efeito-galeria{
+    height: 25rem;
+    width: 35rem;
+}
+.efeito-galeria:hover{
+    transform: scale(1.15);
+    transition: transform 500ms ease-in-out;
 }
